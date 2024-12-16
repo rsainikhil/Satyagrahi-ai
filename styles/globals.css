@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Add some custom global styles if needed */
+body {
+  @apply bg-gray-100 text-gray-900;
+}
+
+/* Optional: Scrollbar styling */
+::-webkit-scrollbar {
+  @apply w-2 bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-500 rounded-full;
+}
+
+/* Optional: Focus and active states */
+*:focus {
+  @apply outline-none ring-2 ring-blue-500 ring-opacity-50;
+}
+
+/* Optional: Transition classes */
+.transition-smooth {
+  @apply transition duration-300 ease-in-out;
+}
+
+/* Optional: Button base styles */
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium transition-smooth;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
+}
+
+input, textarea {
+  @apply text-black bg-white;
+}
+
+input:focus, textarea:focus {
+  @apply outline-none ring-2 ring-blue-500 ring-opacity-50;
+}
