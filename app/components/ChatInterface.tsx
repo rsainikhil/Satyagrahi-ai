@@ -3,12 +3,14 @@
 import { useState, useRef, useEffect } from 'react'
 import { GoogleGenerativeAI } from '@google/generative-ai'
 
+
+
 export default function ChatInterface({ onBack }: { onBack: () => void }) {
   const [messages, setMessages] = useState<any[]>([
     {
       id: 0,
       type: 'ai',
-      text: 'Hi there! I can help you understand social science topics in simple terms. What would you like to know?'
+      text: 'Hey! Need help with social science? I’ve got you covered. What’s your question?'
     }
   ])
   const [inputMessage, setInputMessage] = useState('')
